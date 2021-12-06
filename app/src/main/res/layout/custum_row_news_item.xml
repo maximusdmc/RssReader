@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/cardview_dark_background"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/frameLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:layout_gravity="left|center_vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/thumb_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="218dp"
+                    android:src="@drawable/test"
+                    android:layout_below="@+id/frameLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_alignBottom="@+id/thumb_img"
+                android:background="#80000000"
+                android:gravity="center"
+                android:lines="1"
+                android:text="Titulo Nota"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="12.28"
+                android:layout_gravity="left|center_vertical"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="inherit" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|center_vertical"
+            android:layout_below="@+id/frameLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
